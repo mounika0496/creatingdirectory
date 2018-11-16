@@ -35,17 +35,18 @@ Jupyter Notebook can be installed  without downloading anaconda by using pip
 ### Python code for Creating Directory
 ```
 import os,sys
-directory=str(sys.argv[1])
-def createFolder(directory):
+directory_name=str(sys.argv[1])
+directory_path=str(sys.argv[2])
+def createFolder(directory_name,directory_path):
     try:
-        if not os.path.exists(directory):
-            os.makedirs(directory)
+        if not os.path.exists(directory_name):
+            os.makedirs(directory_name)
     except OSError:
-        return 'Error:Creating directory'+directory
+        return 'Error:Creating directory'+directory_name
     else:
-        print([os.path.join(directory,f) for f in os.listdir(directory)])
+        print([os.path.join(directory_path,f) for f in os.listdir(directory_path)])
 
-createFolder(directory)
+createFolder(directory_name,directory_path)
 ```
 ### Approach Towards The Development of Code
 
