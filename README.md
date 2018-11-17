@@ -48,6 +48,12 @@ def createFolder(directory_name,directory_path):
 
 createFolder(directory_name,directory_path)
 ```
+**Execution**
+
+```
+G:\>python prg1.py PROJECT G:\PROJECT
+[]
+```
 ### Approach Towards The Development of Code
 
 **PROBLEM OF CREATING DIRECTORY**
